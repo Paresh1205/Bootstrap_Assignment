@@ -3,7 +3,9 @@ head{
     margin: 0px auto;
 
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     width: 100%;
     padding-left: 120px;
@@ -156,7 +158,7 @@ header > div >img{
 .navStart{
     background-color: #48bdc5;
     border: transparent;
-    margin-top: 27px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -204,7 +206,7 @@ header > div >img{
 
 div>#head2{
     text-align: center;
-    padding-top: 65px;
+    padding-top: 20px;
 }
 
 div>h6{
@@ -268,8 +270,8 @@ div>#img3{
     border-radius: 25px;
 }
 .below_boxes{
-    margin-bottom: 100px;
-    margin-top:50px;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
 
 .nav-pills{
@@ -330,7 +332,7 @@ div>div>ul>li{
 }
 
 .couresel2{
-    margin-top: 100px; 
+    margin-top: 20px; 
     background: #fafafa;  
 }
 
@@ -338,7 +340,7 @@ div>div>ul>li{
     margin-bottom: 100px;
 }
 .row3>div{
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: center;
 
 }
@@ -390,7 +392,7 @@ div>div>ul>li{
 }
 
 .row1{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .faq{
@@ -465,9 +467,9 @@ div>div>ul>li{
 
 .main_footer{
     background:#132646; 
+    margin-top: 25px;
 }
 .main_footer>.footer{
-    margin-top: 100px;
     background:#132646; 
 }
 
@@ -476,11 +478,11 @@ div>div>ul>li{
     padding-bottom: 25px;
 }
 
-#foot1>div>img{
+#foot1 div img{
     padding-bottom: 20px;
 }
 
-#foot1>div>p{
+#foot1 div p{
     color: grey;
     font-size: 14px;
 }
@@ -504,7 +506,7 @@ div>div>ul>li{
     border-radius: 22px;
 }
 
-#foot1>div>span{
+#foot1 div span{
     padding-right: 20px;
     font-size: 24px;
     color: gray;
@@ -519,12 +521,14 @@ div>div>ul>li{
     text-align: left;
 }
 
+#foot_service img,#foot_service1 img{
+    margin: auto;
+}
+
 #foot_service>label,#foot_service>span{
     color: gray;
         padding-bottom: 9px;
 }
-
-
 
 #foot_service1{
     color: white;
@@ -559,42 +563,8 @@ div>div>ul>li{
 /*MEDIA QUERIES*/
 
 /**************/
-
-@media only screen and (max-width: 480px) {
-
-header{
-    width: 100%;
-   padding-right: 89px;
-    padding-top: 13px;
-}
- 
-header>.container-fluid{
-    padding: 0px;
-}
-
-.carousel-inner>div>.carousel-caption{
-    font-size: 15px;
-    margin-bottom: 0px;
-}
-}
-
-@media (min-width: 768px){
-.modal-dialog {
-    width: 1170px;
-}
-
-
-}
-
-
-@media only screen and (max-width:992px){
-    .hidet{
-        display: inline-block;
-    }
-    .logos , .call , .email , #appoint {
-    text-align: center;
-    padding:10px 0px;
-}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    
 .carousel-caption{
         bottom: 15%;
 }
@@ -604,4 +574,153 @@ header>.container-fluid{
 .carousel-caption p{
        font-size: 16px;
 }
+.navStart .navbar-nav > li > a{
+    font-size: 15px;
 }
+.head{
+    padding: 15px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.hidet{
+    display: inline-block;
+}
+.hidet div{
+    font-size: 15px;
+}
+.logos , .call , .email , #appoint {
+    text-align: center;
+    padding:10px 0px;
+}
+#appoint_button{
+    padding: 10px;
+    font-size: 12px;
+}
+#msg, #call{
+    font-size: 20px;
+}
+header{
+    width: 100%;
+   padding: 0px;
+}
+ 
+header>.container-fluid{
+    padding: 0px;
+}
+.navStart{
+    margin-top: 5px;
+}
+.logos, .call, .email, #appoint{
+    padding: 5px 0;
+}
+.logos img{
+    width: 40%;
+}
+.carousel-inner>div>.carousel-caption{
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding: 5px 0;
+    top: 0;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border: none;
+}
+.nav > li{
+    padding: 3px 0;
+}
+.navStart .navbar-nav > li > a{
+    font-size: 12px;
+    padding: 5px 0;
+}
+.carousel-caption>.btn{
+    padding: 9px;
+    font-size: 10px;
+}
+.carousel-caption h1{
+    font-size: 15px;
+}
+.carousel-caption p{
+    font-size: 12px;
+}
+.carousel-indicators{
+    bottom: 0;
+}
+
+div>#head2{
+    padding-top: 0px;
+}
+
+.features h1{
+    font-size: 30px;
+}
+.features h2,.features h3,.features h4{
+    font-size: 18px;
+}
+
+#head1{
+    padding: 10px 0;
+}
+
+.features h5,.features h6{
+    font-size: 12px !important;
+}
+
+.faq{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+.row3>div>h2{
+    font-size: 30px;
+}
+#doctors{
+    margin: 20px 0;
+}
+
+.nav-pills>li>a{
+    font-size: 13px;
+}
+
+#copyright2{
+    text-align: center;
+}
+
+#head3{
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+div>#desc{
+    font-size: 12px;
+    padding: 5px 0;
+    margin: 0;
+}
+.content-list{
+    padding: 0;
+}
+div>div>ul>li{
+    font-size: 12px;
+    padding: 0;
+}
+#read{
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 5px 20px;
+}
+#buttons{
+    margin-bottom: 15px;
+}
+}
+
+@media (min-width: 768px){
+.modal-dialog {
+    width: 1170px;
+}
+
+
+
+}
+
+
